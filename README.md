@@ -51,11 +51,29 @@ A failed login attempt will now return:
 
 To configure the node to return a failure error message from a previous node through Shared State configure the node as follows. Note in this example to easily set Shared State for testung purposed, the Input Collector Node has been used from https://backstage.forgerock.com/marketplace/api/catalog/entries/AWAoGdxR-2E1SFPSnQD4 has also been used - this can be omitted if Shared State is already being set by another node.
 
-Input Collector Node has been set 
+Input Collector Node has been set the following where the Shared State attribute is called Failure:
+
+![ScreenShot](./example3.png)
+
+The complete Tree looks like this:
 
 ![ScreenShot](./example2.png)
 
+If the collector input is set to Oh no login failed!
 
+The following is returned:
+
+{
+    "code": 401,
+    "reason": "Unauthorized",
+    "message": "Login failure",
+    "detail": {
+        "failureUrl": "Oh no login failed!"
+    }
+}
+
+
+**Disclaimerd**
         
 The sample code described herein is provided on an "as is" basis, without warranty of any kind, to the fullest extent permitted by law. ForgeRock does not warrant or guarantee the individual success developers may have in implementing the sample code on their development platforms or in production configurations.
 
