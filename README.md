@@ -49,7 +49,9 @@ A failed login attempt will now return:
     }
 }
 
-To configure the node to return a failure error message from a previous node through Shared State configure the node as follows:
+To configure the node to return a failure error message from a previous node through Shared State configure the node as follows. Note in this example to easily set Shared State for testung purposed, the Input Collector Node has been used from https://backstage.forgerock.com/marketplace/api/catalog/entries/AWAoGdxR-2E1SFPSnQD4 has also been used - this can be omitted if Shared State is already being set by another node.
+
+Input Collector Node has been set 
 
 ![ScreenShot](./example2.png)
 
