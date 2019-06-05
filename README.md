@@ -55,6 +55,7 @@ Input Collector Node has been set the following where the Shared State attribute
 
 ![ScreenShot](./example3.png)
 
+Within the Failure Node configuration Use Shared State to set Failure Message is enabled and the Shared State Attribute Containing Failure Message. Only active if Use Shared State set to True
 The complete Tree looks like this:
 
 ![ScreenShot](./example2.png)
@@ -73,7 +74,7 @@ The following is returned:
 }
 
 
-**Disclaimerd**
+**Disclaimer**
         
 The sample code described herein is provided on an "as is" basis, without warranty of any kind, to the fullest extent permitted by law. ForgeRock does not warrant or guarantee the individual success developers may have in implementing the sample code on their development platforms or in production configurations.
 
