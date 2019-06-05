@@ -40,6 +40,18 @@ To configure the node to return a failure error message set from within the node
 
 A failed login attempt will now return:
 
+{
+    "code": 401,
+    "reason": "Unauthorized",
+    "message": "Login failure",
+    "detail": {
+        "failureUrl": "Oh my something went wrong!"
+    }
+}
+
+To configure the node to return a failure error message from a previous node through Shared State configure the node as follows:
+
+![ScreenShot](./example2.png)
 
 
         
