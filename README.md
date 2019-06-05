@@ -23,20 +23,24 @@ However, on login failure the failureUrl parameter is always returned. This node
 Copy the .jar file from the ../target directory into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.  Restart the web container to pick up the new node.  The node will then appear in the authentication trees components palette.
 
 
-**USAGE HERE**
+**Usage**
 
 
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following [ForgeRock Knowledge Base Article](https://backstage.forgerock.com/knowledge/kb/article/a74096897).
 
-**SPECIFIC BUILD INSTRUCTIONS HERE**
+**To Build**
 
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following ForgeRock Knowledge Base Article.
 
 To build run mvn clean install
 
-**SCREENSHOTS ARE GOOD LIKE BELOW**
+To configure the node to return a failure error message set from within the node configure the node as follows:
 
 ![ScreenShot](./example.png)
+
+A failed login attempt will now return:
+
+
 
         
 The sample code described herein is provided on an "as is" basis, without warranty of any kind, to the fullest extent permitted by law. ForgeRock does not warrant or guarantee the individual success developers may have in implementing the sample code on their development platforms or in production configurations.
