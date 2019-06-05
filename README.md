@@ -55,7 +55,8 @@ Input Collector Node has been set the following where the Shared State attribute
 
 ![ScreenShot](./example3.png)
 
-Within the Failure Node configuration Use Shared State to set Failure Message is enabled and the Shared State Attribute Containing Failure Message. Only active if Use Shared State set to True
+Within the Failure Node configuration Use Shared State to set Failure Message is enabled and the Shared State Attribute is set to the same value as the Input Collector Node - in this case Failure. 
+
 The complete Tree looks like this:
 
 ![ScreenShot](./example2.png)
