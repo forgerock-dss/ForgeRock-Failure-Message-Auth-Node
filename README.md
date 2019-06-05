@@ -15,7 +15,9 @@
 -->
 # FailureMessage Node
 
-A simple authentication node for ForgeRock's [Identity Platform][forgerock_platform] 6.5.1 and above. This node... **SHORT DESCRIPTION HERE**
+A simple authentication node for ForgeRock's [Identity Platform][forgerock_platform] 6.5.1 and above. There is currently no way to propogate custom error messages through AM's new Authentication Node architecture. 
+
+However, on login failure the failureUrl parameter is always returned. This node sets this parameter to different values based on node specific login - either from an attribute stored in AuthN Shared State from a previous Node or from a value within the Node's configuration itself.
 
 
 Copy the .jar file from the ../target directory into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.  Restart the web container to pick up the new node.  The node will then appear in the authentication trees components palette.
@@ -27,6 +29,10 @@ Copy the .jar file from the ../target directory into the ../web-container/webapp
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following [ForgeRock Knowledge Base Article](https://backstage.forgerock.com/knowledge/kb/article/a74096897).
 
 **SPECIFIC BUILD INSTRUCTIONS HERE**
+
+The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following ForgeRock Knowledge Base Article.
+
+To build run mvn clean install
 
 **SCREENSHOTS ARE GOOD LIKE BELOW**
 
