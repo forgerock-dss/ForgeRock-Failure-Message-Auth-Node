@@ -13,7 +13,7 @@
  *
  * Copyright 2019 ForgeRock AS.
 -->
-# FailureMessage Node
+# Failure Message Node
 
 Written by D. S. Shokar (ForgeRock Customer Success)
 
@@ -61,7 +61,7 @@ Within the Failure Node configuration set the Use Shared State to set Failure Me
 
 ![ScreenShot](./example2.png)
 
-If the collector input is set to Oh no login failed!
+If the collector input is set to Oh my something went wrong!
 
 The following is returned:
 
@@ -70,7 +70,7 @@ The following is returned:
     "reason": "Unauthorized",
     "message": "Login failure",
     "detail": {
-        "failureUrl": "Oh no login failed!"
+        "failureUrl": "Oh my something went wrong"
     }
 }
 
