@@ -51,13 +51,13 @@ A failed login attempt will now return:
     }
 }
 
-To configure the node to return a failure error message from a previous node through Shared State configure the node as follows. Note in this example to easily set Shared State for testung purposed, the Input Collector Node has been used from https://backstage.forgerock.com/marketplace/api/catalog/entries/AWAoGdxR-2E1SFPSnQD4 has also been used - this can be omitted if Shared State is already being set by another node.
+To configure the node to return a failure error message from a previous node through Shared State configure the node as follows. Note in this example to easily set Shared State for testing purposes, the Input Collector Node has been used from https://backstage.forgerock.com/marketplace/api/catalog/entries/AWAoGdxR-2E1SFPSnQD4 - this can be omitted if Shared State is already being set by another node.
 
-Input Collector Node has been set the following where the Shared State attribute is called Failure:
+The Input Collector Node has been setup with the following configuration where the Shared State attribute is called Failure:
 
 ![ScreenShot](./example3.png)
 
-Within the Failure Node configuration Use Shared State to set Failure Message is enabled and the Shared State Attribute is set to the same value as the Input Collector Node - in this case Failure. 
+Within the Failure Node configuration set the Use Shared State to set Failure Message option to enabled and set the Shared State Attribute value to the same as that set in the Input Collector Node - in this case Failure. 
 
 The complete Tree looks like this:
 
