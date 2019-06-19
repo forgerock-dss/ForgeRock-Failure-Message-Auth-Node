@@ -17,7 +17,7 @@
 
 Written by D. S. Shokar (ForgeRock Customer Success)
 
-A simple authentication node for ForgeRock's [Identity Platform][forgerock_platform] 6.5.1 and above. There is currently no way to propogate custom error messages through AM's new Authentication Node architecture. 
+A simple authentication node for ForgeRock's [Identity Platform][forgerock_platform] 6.5.1 and above. There is currently no way to propagate custom error messages through AM's new Authentication Node architecture. 
 
 However, on login failure the failureUrl parameter is always returned. This node sets this parameter to different values based on node specific login - either from an attribute stored in AuthN Shared State from a previous Node or from a value within the Node's configuration itself.
 
